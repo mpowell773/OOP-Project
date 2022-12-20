@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{AD22F467-8940-7B83-8A58-F67884246E6E}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fe5fb290-b102-4ca1-be67-6d0f6b3cb45a" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIHandler.cs">
+    <Files>
+      <File FileName="Assets/Scripts/UIHandler.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OOP-Project" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
