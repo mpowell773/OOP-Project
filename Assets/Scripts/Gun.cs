@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] protected float rateOfFire;
     [SerializeField] protected float reloadSpeed;
 
-    private bool canShoot = true;
+    protected bool canShoot = true;
 
     public virtual void ShootGun()
     {
@@ -24,7 +24,7 @@ public class Gun : MonoBehaviour
         }
     }
 
-    IEnumerator GunShotRate()
+    protected IEnumerator GunShotRate()
     {
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
