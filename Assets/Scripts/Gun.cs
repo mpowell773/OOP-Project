@@ -8,8 +8,9 @@ public class Gun : MonoBehaviour
     [SerializeField] protected GameObject projectile;
     [SerializeField] protected Transform gunPoint;
 
-    [SerializeField] protected int clipSize;
-    [SerializeField] protected int currentAmmo;
+    public int clipSize { get; protected set; }
+    public int currentAmmo { get; protected set; }
+
     [SerializeField] protected float reloadSpeed;
 
     [SerializeField] protected float rateOfFire;

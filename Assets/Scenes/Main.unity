@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 719023112}
   - component: {fileID: 719023111}
   - component: {fileID: 719023110}
+  - component: {fileID: 719023114}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -318,6 +319,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &719023114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719023109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652b5154bf5254d26b3069cdd642368c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +538,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1188,6 +1201,5 @@ MonoBehaviour:
   projectile: {fileID: 1406872596337195037, guid: 1a0207c314a5c4e6ca2c8ab5ccf5264a, type: 3}
   gunPoint: {fileID: 1609410567}
   clipSize: 7
-  currentAmmo: 0
   reloadSpeed: 2
   rateOfFire: 0.25

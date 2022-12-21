@@ -5,6 +5,11 @@ using UnityEngine;
 public class Pistol : Gun
 {
 
+    private void Awake()
+    {
+        clipSize = 7;
+    }
+
     // Update is called once per frame
     void Update()
     {

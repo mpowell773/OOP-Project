@@ -353,6 +353,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ProjectileMovement.cs"
 "Assets/Scripts/UIHandler.cs"
+"Assets/Scripts/UIMainGame.cs"
 -langversion:9.0
 
 /deterministic
