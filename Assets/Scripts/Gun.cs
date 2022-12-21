@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    // Variables \\
     [SerializeField] protected GameObject projectile;
     [SerializeField] protected Transform gunPoint;
 
@@ -16,6 +17,7 @@ public class Gun : MonoBehaviour
     protected bool canShoot = true;
     protected bool isReloading = false;
 
+    // Methods \\
     private void Start()
     {
         currentAmmo = clipSize;
