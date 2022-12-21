@@ -14,10 +14,11 @@ public class Pistol : Gun
   
     public override void ShootGun()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot)
+        if (Input.GetMouseButtonDown(0) && canShoot && currentAmmo > 0)
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
             canShoot = false;
+            currentAmmo--;
             StartCoroutine(GunShotRate());
         }
     }
