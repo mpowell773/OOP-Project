@@ -7,22 +7,24 @@ public class Gun : MonoBehaviour
     [SerializeField] protected GameObject projectile;
     [SerializeField] protected Transform gunPoint;
 
-    [SerializeField] protected int ammoCount;
+    [SerializeField] protected int clipSize;
     [SerializeField] protected int currentAmmo;
-    [SerializeField] protected float rateOfFire;
     [SerializeField] protected float reloadSpeed;
 
+    [SerializeField] protected float rateOfFire;
+
     protected bool canShoot = true;
+    protected bool isReloading = false;
 
     private void Start()
     {
-        currentAmmo = ammoCount;
+        currentAmmo = clipSize;
     }
 
     public virtual void ShootGun()
     {
         // Left Click fires weapon
-        if (Input.GetMouseButton(0) && canShoot && currentAmmo > 0)
+        if (Input.GetMouseButton(0) && canShoot && currentAmmo > 0 && !isReloading)
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
             canShoot = false;
@@ -40,6 +42,19 @@ public class Gun : MonoBehaviour
 
     public virtual void ReloadGun()
     {
+        if (Input.GetKeyDown(KeyCode.R) && currentAmmo != clipSize)
+        {
+            Debug.Log("Gun is reloading");
+            isReloading = true;
+            StartCoroutine(GunReloadingTimer());
+        }
+    }
 
+    protected IEnumerator GunReloadingTimer()
+    {
+        yield return new WaitForSeconds(reloadSpeed);
+        currentAmmo = clipSize;
+        isReloading = false;
+        Debug.Log("Gun finished loading");
     }
 }

@@ -9,12 +9,13 @@ public class Pistol : Gun
     void Update()
     {
         ShootGun();
+        ReloadGun();
     }
 
   
     public override void ShootGun()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot && currentAmmo > 0)
+        if (Input.GetMouseButtonDown(0) && canShoot && currentAmmo > 0 && !isReloading)
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
             canShoot = false;

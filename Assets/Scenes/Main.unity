@@ -719,15 +719,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001609629}
-  m_LocalRotation: {x: 0.66164804, y: -0, z: -0, w: 0.74981457}
-  m_LocalPosition: {x: 0.49, y: 0.175, z: 0.72}
+  m_LocalRotation: {x: 0.66125953, y: -0.022671627, z: 0.025692686, w: 0.7493743}
+  m_LocalPosition: {x: 0.49, y: 0.17499995, z: 0.72}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1609410567}
   m_Father: {fileID: 1949413798}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 82.851, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 82.851, y: 0, z: 3.927}
 --- !u!136 &2001609631
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -806,6 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1406872596337195037, guid: 1a0207c314a5c4e6ca2c8ab5ccf5264a, type: 3}
   gunPoint: {fileID: 1609410567}
-  ammoCount: 7
+  clipSize: 7
+  currentAmmo: 0
+  reloadSpeed: 2
   rateOfFire: 0.25
-  reloadSpeed: 5
