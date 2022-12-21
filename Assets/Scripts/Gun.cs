@@ -11,12 +11,13 @@ public class Gun : MonoBehaviour
     [SerializeField] protected float rateOfFire;
     [SerializeField] protected float reloadSpeed;
 
-    protected void ShootGun()
+    public virtual void ShootGun()
     {
         // Left Click fires weapon
         if (Input.GetMouseButton(0))
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
         }
+        Debug.Log("Bang");
     }
 }

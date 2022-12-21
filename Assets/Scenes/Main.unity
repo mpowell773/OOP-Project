@@ -704,6 +704,7 @@ GameObject:
   - component: {fileID: 2001609633}
   - component: {fileID: 2001609632}
   - component: {fileID: 2001609631}
+  - component: {fileID: 2001609634}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -791,3 +792,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001609629}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2001609634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001609629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94602ee2de9de4eebb7c3b7190eb17c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1406872596337195037, guid: 1a0207c314a5c4e6ca2c8ab5ccf5264a, type: 3}
+  gunPoint: {fileID: 1609410567}
+  ammoCount: 7
+  rateOfFire: 5
+  reloadSpeed: 5
