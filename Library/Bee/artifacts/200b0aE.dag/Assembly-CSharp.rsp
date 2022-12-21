@@ -350,6 +350,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ProjectileMovement.cs"
 "Assets/Scripts/UIHandler.cs"
 -langversion:9.0
 
