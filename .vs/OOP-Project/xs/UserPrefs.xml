@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{AD22F467-8940-7B83-8A58-F67884246E6E}|">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5a748b50-33d9-433e-a2c7-3060033dacd3" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6ea6fafd-9c8c-4520-8943-44fba8bafb4b" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GunChildren/Pistol.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
     <Files>
       <File FileName="Assets/Scripts/UIHandler.cs" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="39" Column="25" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="22" Column="6" />
-      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="22" Column="2" />
-      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="49" Column="6" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="20" Column="70" />
+      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" Line="25" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="OOP-Project" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="GunChildren" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="OOP-Project" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -27,5 +21,5 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

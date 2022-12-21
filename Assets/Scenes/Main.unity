@@ -807,5 +807,5 @@ MonoBehaviour:
   projectile: {fileID: 1406872596337195037, guid: 1a0207c314a5c4e6ca2c8ab5ccf5264a, type: 3}
   gunPoint: {fileID: 1609410567}
   ammoCount: 7
-  rateOfFire: 5
+  rateOfFire: 0.25
   reloadSpeed: 5

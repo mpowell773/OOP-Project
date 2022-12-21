@@ -22,6 +22,4 @@ public class ProjectileMovement : MonoBehaviour
         //Adding force to projectile when instantiated
         projectileRb.AddRelativeForce(gunDirection * forceModifier, ForceMode.Impulse);
     }
-
-
 }

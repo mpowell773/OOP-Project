@@ -11,13 +11,28 @@ public class Gun : MonoBehaviour
     [SerializeField] protected float rateOfFire;
     [SerializeField] protected float reloadSpeed;
 
+    private bool canShoot = true;
+
     public virtual void ShootGun()
     {
         // Left Click fires weapon
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && canShoot)
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
+            canShoot = false;
+            StartCoroutine(GunShotRate());
         }
-        Debug.Log("Bang");
+    }
+
+    IEnumerator GunShotRate()
+    {
+        yield return new WaitForSeconds(rateOfFire);
+        canShoot = true;
+
+    }
+
+    public virtual void ReloadGun()
+    {
+
     }
 }

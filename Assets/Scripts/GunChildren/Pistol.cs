@@ -16,12 +16,13 @@ public class Pistol : Gun
         ShootGun();
     }
 
+    /*
     public override void ShootGun()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
         }
-        Debug.Log("Bang");
     }
+    */
 }
