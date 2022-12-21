@@ -951,3 +951,15 @@ Received Import Request.
   path: Assets/Prefabs/Projectile.prefab
   artifactKey: Guid(1a0207c314a5c4e6ca2c8ab5ccf5264a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Projectile.prefab using Guid(1a0207c314a5c4e6ca2c8ab5ccf5264a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cc81d68fd9329eb02acdcd74d0a734') in 0.561797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 373.541509 seconds.
+  path: Assets/Scripts/Gun.cs
+  artifactKey: Guid(535c8896f39c74da3b8df55ed3e6f042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun.cs using Guid(535c8896f39c74da3b8df55ed3e6f042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353df0983f229dd64a86dd0ebc70a3f6') in 0.000872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.872593 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(3c43e65d0764541b69bd2b35f17c8097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(3c43e65d0764541b69bd2b35f17c8097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef431b722d680d03c3a062b351236af') in 0.001374 seconds 
