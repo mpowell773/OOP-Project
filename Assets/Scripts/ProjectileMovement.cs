@@ -6,7 +6,7 @@ public class ProjectileMovement : MonoBehaviour
 {
 
     private Rigidbody projectileRb;
-    private Transform gunBody;
+    private Transform centerEye;
     private Transform gunPoint;
 
     [SerializeField] float forceModifier = 5;
@@ -14,10 +14,10 @@ public class ProjectileMovement : MonoBehaviour
     void Awake()
     {
         projectileRb = GetComponent<Rigidbody>();
-        gunBody = GameObject.Find("Pistol").transform;
+        centerEye = GameObject.Find("CenterEye").transform;
         gunPoint = GameObject.Find("GunPoint").transform;
 
-        Vector3 gunDirection = gunPoint.position - gunBody.position; 
+        Vector3 gunDirection = (centerEye.position - gunPoint.position).normalized; 
 
         //Adding force to projectile when instantiated
         projectileRb.AddRelativeForce(gunDirection * forceModifier, ForceMode.Impulse);
