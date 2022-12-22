@@ -10,8 +10,9 @@ public class ProjectileMovement : MonoBehaviour
     private Transform gunPoint;
 
     [SerializeField] float forceModifier = 5;
+    [SerializeField] float projectileRemovalTime = 10;
 
-    void Awake()
+    private void Awake()
     {
         projectileRb = GetComponent<Rigidbody>();
         centerEye = GameObject.Find("CenterEye").transform;
@@ -21,5 +22,14 @@ public class ProjectileMovement : MonoBehaviour
 
         //Adding force to projectile when instantiated
         projectileRb.AddRelativeForce(gunDirection * forceModifier, ForceMode.Impulse);
+
+        //Delete projectile after certain time period
+        StartCoroutine(RemoveProjectileTimer());
+    }
+
+    private IEnumerator RemoveProjectileTimer()
+    {
+        yield return new WaitForSeconds(projectileRemovalTime);
+        Destroy(gameObject);
     }
 }
