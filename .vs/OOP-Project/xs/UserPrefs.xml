@@ -1,26 +1,34 @@
 ﻿<Properties StartupConfiguration="{AD22F467-8940-7B83-8A58-F67884246E6E}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d902cc19-de41-4ff2-8177-951f555bd711" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
-    <Files>
-      <File FileName="Assets/Scripts/UIHandler.cs" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="20" Column="50" />
-      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="27" Column="49" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="27" Column="6" />
-      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" />
-      <File FileName="Assets/Scripts/UIMainGame.cs" Line="28" Column="47" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="OOP-Project" expanded="True" />
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIMainGame.cs">
+    <Files>
+      <File FileName="Assets/Scripts/UIHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="27" Column="49" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="91" Column="40" />
+      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" Line="22" Column="36" />
+      <File FileName="Assets/Scripts/GunChildren/SMG.cs" Line="11" Column="25" />
+      <File FileName="Assets/Scripts/UIMainGame.cs" Line="15" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OOP-Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="GunChildren" expanded="True" />
+                <Node name="UIMainGame.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5bf044ab-b6c7-48a7-9e5a-f02e90b64afa" />
 </Properties>

@@ -18,17 +18,16 @@ public class Pistol : Gun
         ReloadGun();
         SwitchGun();
     }
-
   
     public override void ShootGun()
     {
         if (Input.GetMouseButtonDown(0) && canShoot && currentAmmo > 0 && !isReloading)
         {
+            muzzleFlashParticle.Play();
             Instantiate(projectile, gunPoint.position, projectile.transform.rotation);
             canShoot = false;
             currentAmmo--;
             StartCoroutine(GunShotRate());
         }
     }
-   
 }
