@@ -5,8 +5,10 @@ using TMPro;
 public class UIMainGame : MonoBehaviour
 {
     [SerializeField] private Pistol pistol;
+    [SerializeField] private SMG smg;
 
     private TextMeshProUGUI ammoText;
+    private TextMeshProUGUI gunNameText;
 
     private int currentAmmo;
     private int clipSize;
@@ -14,15 +16,28 @@ public class UIMainGame : MonoBehaviour
     private void Start()
     {
         ammoText = GameObject.Find("AmmoText").GetComponent<TextMeshProUGUI>();
+        gunNameText = GameObject.Find("GunNameText").GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
     {
-        currentAmmo = pistol.currentAmmo;
-        clipSize = pistol.clipSize;
+        if (pistol.isActiveAndEnabled)
+        {
+            UpdateGunUI(pistol);
+        }
+        else
+        {
+            UpdateGunUI(smg);
+        }
+
+    }
+
+    private void UpdateGunUI(Gun gun)
+    {
+        currentAmmo = gun.currentAmmo;
+        clipSize = gun.clipSize;
 
         ammoText.text = $"Ammo: {currentAmmo}/{clipSize}";
+        gunNameText.text = gun.gunName;
     }
 }
-
-// NOTE: The reload reticule code is in gun.cs

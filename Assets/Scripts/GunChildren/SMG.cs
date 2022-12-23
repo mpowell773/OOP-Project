@@ -8,6 +8,7 @@ public class SMG : Gun
     private void Awake()
     {
         clipSize = 30;
+        gunName = "smg";
     }
 
     // Update is called once per frame

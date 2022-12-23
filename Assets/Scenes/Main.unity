@@ -525,6 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pistol: {fileID: 2001609634}
+  smg: {fileID: 528679774}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

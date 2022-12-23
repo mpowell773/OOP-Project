@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
 
     public int clipSize { get; protected set; }
     public int currentAmmo { get; protected set; }
+    public string gunName { get; protected set; }
 
     [SerializeField] protected float reloadSpeed;
 
