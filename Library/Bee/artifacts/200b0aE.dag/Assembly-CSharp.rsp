@@ -351,8 +351,10 @@
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/GunChildren/Pistol.cs"
 "Assets/Scripts/GunChildren/SMG.cs"
+"Assets/Scripts/MainManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ProjectileMovement.cs"
+"Assets/Scripts/TargetScript.cs"
 "Assets/Scripts/UIHandler.cs"
 "Assets/Scripts/UIMainGame.cs"
 -langversion:9.0
