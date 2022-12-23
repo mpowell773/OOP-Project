@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class UIMainGame : MonoBehaviour
 {
     [SerializeField] private Pistol pistol;
@@ -43,3 +44,4 @@ public class UIMainGame : MonoBehaviour
 }
 
 //NOTE: Reload Indicator code in Gun.cs
+//      Refactoring this code into UI is a later step
