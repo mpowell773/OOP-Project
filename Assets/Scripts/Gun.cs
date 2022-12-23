@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
@@ -47,7 +48,6 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) && currentAmmo != clipSize)
         {
-            Debug.Log("Gun is reloading");
             isReloading = true;
             StartCoroutine(GunReloadingTimer());
         }
@@ -58,6 +58,5 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(reloadSpeed);
         currentAmmo = clipSize;
         isReloading = false;
-        Debug.Log("Gun finished loading");
     }
 }

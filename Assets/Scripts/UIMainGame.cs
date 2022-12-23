@@ -24,3 +24,5 @@ public class UIMainGame : MonoBehaviour
         ammoText.text = $"Ammo: {currentAmmo}/{clipSize}";
     }
 }
+
+// NOTE: The reload reticule code is in gun.cs
