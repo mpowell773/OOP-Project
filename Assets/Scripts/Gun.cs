@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class Gun : MonoBehaviour
     [SerializeField] protected GameObject projectile;
     [SerializeField] protected ParticleSystem muzzleFlashParticle;
     [SerializeField] protected Transform gunPoint;
+    [SerializeField] protected Image reloadIndicator;
 
     public int clipSize { get; protected set; }
     public int currentAmmo { get; protected set; }
@@ -30,7 +31,7 @@ public class Gun : MonoBehaviour
         currentAmmo = clipSize;
 
         // There's probably a better way to go about this, but initially both guns are active
-        // so they can be assigned as variables and then simply turn off smg by invoked SwitchGunTimer()
+        // so they can be assigned as variables, then turn off smg by invoked SwitchGunTimer()
         pistol = GameObject.Find("Pistol");
         smg = GameObject.Find("SMG");
         StartCoroutine(SwitchGunTimer());
@@ -64,10 +65,18 @@ public class Gun : MonoBehaviour
 
     public virtual void ReloadGun()
     {
+        float rotationSpeed = -200f;
+
         if (Input.GetKeyDown(KeyCode.R) && currentAmmo != clipSize)
         {
             isReloading = true;
+            reloadIndicator.gameObject.SetActive(true);
             StartCoroutine(GunReloadingTimer());
+        }
+
+        if (isReloading)
+        {
+            reloadIndicator.transform.Rotate(new Vector3(0, 0, rotationSpeed) * Time.deltaTime);
         }
     }
 
@@ -76,6 +85,7 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(reloadSpeed);
         currentAmmo = clipSize;
         isReloading = false;
+        reloadIndicator.gameObject.SetActive(false);
     }
 
     public virtual void SwitchGun()

@@ -41,3 +41,5 @@ public class UIMainGame : MonoBehaviour
         gunNameText.text = gun.gunName;
     }
 }
+
+//NOTE: Reload Indicator code in Gun.cs
