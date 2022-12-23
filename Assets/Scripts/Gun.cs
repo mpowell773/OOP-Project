@@ -16,6 +16,9 @@ public class Gun : MonoBehaviour
 
     [SerializeField] protected float rateOfFire;
 
+    private GameObject pistol;
+    private GameObject smg;
+
     protected bool canShoot = true;
     protected bool isReloading = false;
 
@@ -23,6 +26,18 @@ public class Gun : MonoBehaviour
     private void Start()
     {
         currentAmmo = clipSize;
+
+        // There's probably a better way to go about this, but initially both guns are active
+        // so they can be assigned as variables and then simply turn off smg by invoked SwitchGun()
+        pistol = GameObject.Find("Pistol");
+        smg = GameObject.Find("SMG");
+        StartCoroutine(SwitchGunTimer());
+    }
+
+    private IEnumerator SwitchGunTimer()
+    {
+        yield return new WaitForSeconds(.01f);
+        smg.SetActive(false);
     }
 
     public virtual void ShootGun()
@@ -58,5 +73,22 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(reloadSpeed);
         currentAmmo = clipSize;
         isReloading = false;
+    }
+
+    public virtual void SwitchGun()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && !isReloading)
+        {
+            if (pistol.activeSelf == true)
+            {
+                pistol.SetActive(false);
+                smg.SetActive(true);
+            }
+            else
+            {
+                smg.SetActive(false);
+                pistol.SetActive(true);
+            }
+        }   
     }
 }

@@ -15,6 +15,7 @@ public class Pistol : Gun
     {
         ShootGun();
         ReloadGun();
+        SwitchGun();
     }
 
   

@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 528679774}
   m_Layer: 0
   m_Name: SMG
-  m_TagString: Untagged
+  m_TagString: SMG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,11 +1464,11 @@ GameObject:
   - component: {fileID: 2001609634}
   m_Layer: 0
   m_Name: Pistol
-  m_TagString: Untagged
+  m_TagString: Pistol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2001609630
 Transform:
   m_ObjectHideFlags: 0

@@ -15,5 +15,6 @@ public class SMG : Gun
     {
         ShootGun();
         ReloadGun();
+        SwitchGun();
     }
 }
