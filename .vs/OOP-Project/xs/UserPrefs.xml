@@ -1,19 +1,15 @@
 ﻿<Properties StartupConfiguration="{AD22F467-8940-7B83-8A58-F67884246E6E}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="56803cae-265e-40be-806f-6f382d77ea72" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="65cf0b0d-556c-4478-ad77-053bbe9c25f7" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProjectileMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/UIHandler.cs" />
-      <File FileName="Assets/Scripts/PlayerController.cs" />
-      <File FileName="Assets/Scripts/ProjectileMovement.cs" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="27" Column="18" />
+      <File FileName="Assets/Scripts/UIHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="80" Column="10" />
       <File FileName="Assets/Scripts/GunChildren/Pistol.cs" Line="12" Column="6" />
-      <File FileName="Assets/Scripts/GunChildren/SMG.cs" />
-      <File FileName="Assets/Scripts/UIMainGame.cs" />
+      <File FileName="Assets/Scripts/GunChildren/SMG.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/UIMainGame.cs" Line="47" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,5 +19,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
