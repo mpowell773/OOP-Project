@@ -1,15 +1,21 @@
 ﻿<Properties StartupConfiguration="{AD22F467-8940-7B83-8A58-F67884246E6E}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="56803cae-265e-40be-806f-6f382d77ea72" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f736128e-2878-4725-87c6-1b052dae9e2b" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProjectileMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/UIHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ProjectileMovement.cs" Line="36" Column="1" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="80" Column="10" />
-      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" Line="12" Column="6" />
-      <File FileName="Assets/Scripts/GunChildren/SMG.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/UIMainGame.cs" Line="47" Column="54" />
+      <File FileName="Assets/Scripts/UIHandler.cs" />
+      <File FileName="Assets/Scripts/PlayerController.cs" />
+      <File FileName="Assets/Scripts/ProjectileMovement.cs" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="57" Column="6" />
+      <File FileName="Assets/Scripts/GunChildren/Pistol.cs" />
+      <File FileName="Assets/Scripts/GunChildren/SMG.cs" />
+      <File FileName="Assets/Scripts/UIMainGame.cs" />
+      <File FileName="Assets/Scripts/TargetScript.cs" Line="14" Column="10" />
+      <File FileName="Assets/Scripts/MainManager.cs" Line="33" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,9 +25,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

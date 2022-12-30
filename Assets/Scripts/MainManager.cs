@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
-    public bool isGameRunning = true;
+    public bool isGameRunning;
     public int score = 0;
 
-    [SerializeField] int gameTimer = 30;
+    [SerializeField] int gameTimer = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -18,20 +18,20 @@ public class MainManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            RunGame();
-            Debug.Log("Game started");
-        }
+
+        isGameRunning = true;
+        RunGame();
+        Debug.Log("Game started");   
     }
 
     private void RunGame()
     {
-         while (isGameRunning)
-        {
+         if (isGameRunning)
+         {
             Debug.Log("Game running");
             StartCoroutine(GameTimer());
-        }
+            
+         }
     }
 
     IEnumerator GameTimer()

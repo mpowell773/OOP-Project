@@ -11,7 +11,6 @@ public class TargetScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             Destroy(gameObject);
-            Debug.Log("hamster");
         }
     }
 }
