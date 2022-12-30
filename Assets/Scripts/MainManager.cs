@@ -10,7 +10,8 @@ public class MainManager : MonoBehaviour
     public int score = 0;
 
     [SerializeField] int gameTimer = 5;
-    private int targetCount = 0;
+    private int targetCount;
+    private float spawnRange = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +44,14 @@ public class MainManager : MonoBehaviour
 
         if (targetCount <= 0 && isGameRunning)
         {
-            Instantiate(target, new Vector3(5, 5, 5), target.transform.rotation);
+            Instantiate(target, SpawnRange(), target.transform.rotation);
         }
+    }
+
+    private Vector3 SpawnRange()
+    {
+        float yOffSet = 1;
+
+        return new Vector3(Random.Range(-spawnRange, spawnRange), Random.Range(yOffSet, spawnRange), gameObject.transform.position.z);
     }
 }
