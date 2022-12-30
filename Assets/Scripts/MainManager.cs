@@ -18,8 +18,10 @@ public class MainManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        isGameRunning = true;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isGameRunning = true;
+        }
         RunGame();
         Debug.Log("Game started");   
     }
