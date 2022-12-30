@@ -21,19 +21,13 @@ public class MainManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        targetCount = FindObjectsOfType<TargetScript>().Length;
-        Debug.Log($"Target count: {targetCount}");
+        RunTargetGame();
 
+        // Player Input to start game
         if (Input.GetKeyDown(KeyCode.E))
         {
             isGameRunning = true;
-            Debug.Log("Game Started");
             StartCoroutine(GameTimer());
-        }
-
-        if (targetCount <= 0 && isGameRunning)
-        {
-            Instantiate(target, new Vector3(5, 5, 5), target.transform.rotation);
         }
     }
 
@@ -41,6 +35,15 @@ public class MainManager : MonoBehaviour
     {
         yield return new WaitForSeconds(gameTimer);
         isGameRunning = false;
-        Debug.Log("Game Done");
+    }
+
+    private void RunTargetGame()
+    {
+        targetCount = FindObjectsOfType<TargetScript>().Length;
+
+        if (targetCount <= 0 && isGameRunning)
+        {
+            Instantiate(target, new Vector3(5, 5, 5), target.transform.rotation);
+        }
     }
 }
